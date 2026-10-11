@@ -1,0 +1,675 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-11T12:20:58.568Z",
+  "title": "Design System: NURT CRM",
+  "extensions": {
+    "colorMeta": {
+      "graphite-ground": {
+        "role": "neutral",
+        "displayName": "Graphite Ground",
+        "canonical": "#0a0d11",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#222426",
+          "#3c4045",
+          "#5a5e63",
+          "#797e83",
+          "#9a9fa5",
+          "#c0c4cb",
+          "#eceff2"
+        ]
+      },
+      "graphite-panel": {
+        "role": "neutral",
+        "displayName": "Graphite Panel",
+        "canonical": "#10151b",
+        "tonalRamp": [
+          "#090b0e",
+          "#222428",
+          "#3a4047",
+          "#585e66",
+          "#777e86",
+          "#989fa7",
+          "#bec5cd",
+          "#ebeff3"
+        ]
+      },
+      "graphite-panel-raised": {
+        "role": "neutral",
+        "displayName": "Raised Graphite",
+        "canonical": "#151b23",
+        "tonalRamp": [
+          "#090b0f",
+          "#212428",
+          "#3a4049",
+          "#575e68",
+          "#767e88",
+          "#979faa",
+          "#bdc5d0",
+          "#ebeff5"
+        ]
+      },
+      "graphite-rule": {
+        "role": "neutral",
+        "displayName": "Graphite Rule",
+        "canonical": "#212a35",
+        "tonalRamp": [
+          "#080b10",
+          "#20242a",
+          "#37414c",
+          "#545f6b",
+          "#747e8c",
+          "#94a0ad",
+          "#bac5d4",
+          "#e9eff7"
+        ]
+      },
+      "graphite-rule-strong": {
+        "role": "neutral",
+        "displayName": "Strong Graphite Rule",
+        "canonical": "#2c3744",
+        "tonalRamp": [
+          "#070c11",
+          "#1f252b",
+          "#36414e",
+          "#535f6d",
+          "#727f8e",
+          "#93a0b0",
+          "#b8c6d6",
+          "#e8eff8"
+        ]
+      },
+      "signage-white": {
+        "role": "neutral",
+        "displayName": "Signage White",
+        "canonical": "#e9eef3",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#222426",
+          "#3c4044",
+          "#5a5e62",
+          "#797e82",
+          "#9a9fa4",
+          "#c0c5c9",
+          "#eceff1"
+        ]
+      },
+      "steel-text": {
+        "role": "neutral",
+        "displayName": "Steel Text",
+        "canonical": "#a3aebb",
+        "tonalRamp": [
+          "#080b10",
+          "#202429",
+          "#37414c",
+          "#555f6a",
+          "#747e8b",
+          "#95a0ac",
+          "#bac5d3",
+          "#e9eff6"
+        ]
+      },
+      "steel-faint": {
+        "role": "neutral",
+        "displayName": "Steel Faint",
+        "canonical": "#808b99",
+        "tonalRamp": [
+          "#080b10",
+          "#20242a",
+          "#37414d",
+          "#545f6c",
+          "#747e8c",
+          "#94a0ae",
+          "#bac5d4",
+          "#e9eff7"
+        ]
+      },
+      "board-amber": {
+        "role": "primary",
+        "displayName": "Board Amber",
+        "canonical": "#ffb020",
+        "tonalRamp": [
+          "#1d0200",
+          "#3a1b00",
+          "#6e2800",
+          "#914900",
+          "#b46a00",
+          "#d98c00",
+          "#ffb224",
+          "#ffe7b1"
+        ]
+      },
+      "board-amber-ink": {
+        "role": "primary",
+        "displayName": "Amber Ink",
+        "canonical": "#ffc04d",
+        "tonalRamp": [
+          "#1a0500",
+          "#361e00",
+          "#672f00",
+          "#884f00",
+          "#ab7000",
+          "#ce9200",
+          "#f6b843",
+          "#ffeab7"
+        ]
+      },
+      "board-amber-wash": {
+        "role": "primary",
+        "displayName": "Amber Wash",
+        "canonical": "rgba(255,176,32,.13)"
+      },
+      "lamp-green": {
+        "role": "secondary",
+        "displayName": "Lamp Green",
+        "canonical": "#3fd69a",
+        "tonalRamp": [
+          "#001302",
+          "#002f18",
+          "#005524",
+          "#007641",
+          "#009860",
+          "#03bb81",
+          "#4fe2a6",
+          "#c1ffdf"
+        ]
+      },
+      "lamp-green-wash": {
+        "role": "secondary",
+        "displayName": "Green Wash",
+        "canonical": "rgba(63,214,154,.13)"
+      },
+      "lamp-red": {
+        "role": "secondary",
+        "displayName": "Lamp Red",
+        "canonical": "#ff6f61",
+        "tonalRamp": [
+          "#260000",
+          "#460b08",
+          "#860000",
+          "#ac1c19",
+          "#d2463c",
+          "#fa6a5c",
+          "#ff9181",
+          "#ffd8cd"
+        ]
+      },
+      "lamp-red-wash": {
+        "role": "secondary",
+        "displayName": "Red Wash",
+        "canonical": "rgba(255,111,97,.14)"
+      },
+      "previous-period-slate": {
+        "role": "neutral",
+        "displayName": "Previous-Period Slate",
+        "canonical": "#5d6a7a",
+        "tonalRamp": [
+          "#070c11",
+          "#1f252b",
+          "#354150",
+          "#525f6f",
+          "#717f8f",
+          "#92a0b1",
+          "#b7c6d8",
+          "#e8eff9"
+        ]
+      },
+      "on-amber": {
+        "role": "primary",
+        "displayName": "On-Amber Ink",
+        "canonical": "#1a1204",
+        "tonalRamp": [
+          "#0e0b05",
+          "#28231c",
+          "#483e2e",
+          "#665c4b",
+          "#867c6a",
+          "#a89d8a",
+          "#cec3af",
+          "#f3eee4"
+        ]
+      },
+      "paper-ground": {
+        "role": "neutral",
+        "displayName": "Paper Ground",
+        "canonical": "#e9edf1",
+        "tonalRamp": [
+          "#0a0b0d",
+          "#232426",
+          "#3d4043",
+          "#5b5e61",
+          "#7a7e81",
+          "#9b9fa3",
+          "#c1c5c8",
+          "#edeff1"
+        ]
+      },
+      "paper-panel": {
+        "role": "neutral",
+        "displayName": "Paper Panel",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ]
+      },
+      "paper-panel-raised": {
+        "role": "neutral",
+        "displayName": "Raised Paper",
+        "canonical": "#f4f6f8",
+        "tonalRamp": [
+          "#0b0b0c",
+          "#232425",
+          "#3e4041",
+          "#5c5e5f",
+          "#7c7d7f",
+          "#9d9fa0",
+          "#c2c4c6",
+          "#edeeef"
+        ]
+      },
+      "paper-rule": {
+        "role": "neutral",
+        "displayName": "Paper Rule",
+        "canonical": "#dbe1e8",
+        "tonalRamp": [
+          "#090b0e",
+          "#222427",
+          "#3b4046",
+          "#595e64",
+          "#787e84",
+          "#999fa6",
+          "#bfc5cc",
+          "#eceff2"
+        ]
+      },
+      "paper-rule-strong": {
+        "role": "neutral",
+        "displayName": "Strong Paper Rule",
+        "canonical": "#c8d0da",
+        "tonalRamp": [
+          "#090b0f",
+          "#212428",
+          "#3a4048",
+          "#575e67",
+          "#777e87",
+          "#989fa9",
+          "#bdc5cf",
+          "#ebeff4"
+        ]
+      },
+      "paper-ink": {
+        "role": "neutral",
+        "displayName": "Paper Ink",
+        "canonical": "#0e1319",
+        "tonalRamp": [
+          "#090b0e",
+          "#222428",
+          "#3a4047",
+          "#585e66",
+          "#777e86",
+          "#989fa8",
+          "#bec5ce",
+          "#ebeff3"
+        ]
+      },
+      "paper-text": {
+        "role": "neutral",
+        "displayName": "Paper Text",
+        "canonical": "#475261",
+        "tonalRamp": [
+          "#070b11",
+          "#20242b",
+          "#36414f",
+          "#535f6e",
+          "#727e8f",
+          "#93a0b0",
+          "#b8c5d7",
+          "#e8eff8"
+        ]
+      },
+      "paper-faint": {
+        "role": "neutral",
+        "displayName": "Paper Faint",
+        "canonical": "#5f6b7a",
+        "tonalRamp": [
+          "#070b11",
+          "#1f242b",
+          "#36414e",
+          "#535f6d",
+          "#727e8e",
+          "#93a0b0",
+          "#b8c6d6",
+          "#e8eff8"
+        ]
+      },
+      "paper-amber": {
+        "role": "primary",
+        "displayName": "Paper Amber",
+        "canonical": "#f2a100",
+        "tonalRamp": [
+          "#1e0200",
+          "#3b1b00",
+          "#702600",
+          "#924700",
+          "#b66900",
+          "#da8b00",
+          "#ffb12b",
+          "#ffe7b2"
+        ]
+      },
+      "paper-amber-ink": {
+        "role": "primary",
+        "displayName": "Deep Ochre Ink",
+        "canonical": "#9a5b00",
+        "tonalRamp": [
+          "#1b0400",
+          "#371d00",
+          "#682d00",
+          "#8a4c00",
+          "#ad6c20",
+          "#d18e47",
+          "#f9b46d",
+          "#ffe7c5"
+        ]
+      },
+      "paper-amber-wash": {
+        "role": "primary",
+        "displayName": "Paper Amber Wash",
+        "canonical": "rgba(242,161,0,.16)"
+      },
+      "paper-green": {
+        "role": "secondary",
+        "displayName": "Paper Green",
+        "canonical": "#0c8a5b",
+        "tonalRamp": [
+          "#001203",
+          "#002d19",
+          "#005227",
+          "#007245",
+          "#1f9364",
+          "#4cb684",
+          "#75dda9",
+          "#cbfce1"
+        ]
+      },
+      "paper-green-wash": {
+        "role": "secondary",
+        "displayName": "Paper Green Wash",
+        "canonical": "rgba(12,138,91,.12)"
+      },
+      "paper-red": {
+        "role": "secondary",
+        "displayName": "Paper Red",
+        "canonical": "#c9372b",
+        "tonalRamp": [
+          "#270000",
+          "#470906",
+          "#880000",
+          "#ae160f",
+          "#d54335",
+          "#fc6857",
+          "#ff8f7c",
+          "#ffd8cb"
+        ]
+      },
+      "paper-red-wash": {
+        "role": "secondary",
+        "displayName": "Paper Red Wash",
+        "canonical": "rgba(201,55,43,.1)"
+      },
+      "paper-previous-period": {
+        "role": "neutral",
+        "displayName": "Paper Previous-Period Slate",
+        "canonical": "#9aa5b3",
+        "tonalRamp": [
+          "#080b10",
+          "#20242a",
+          "#37414c",
+          "#555f6b",
+          "#747e8c",
+          "#95a0ad",
+          "#bac5d4",
+          "#e9eff7"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Top-bar page title only; 21px under 640px."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Title of the lead (board) panel."
+      },
+      "panel-title": {
+        "displayName": "Panel Title",
+        "purpose": "Every other panel heading."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Base UI text; data rows and lists at 14px."
+      },
+      "body-small": {
+        "displayName": "Body Small",
+        "purpose": "Sub-lines, counts, footers, notes."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Uppercase table and board column headers only."
+      },
+      "figure-large": {
+        "displayName": "Figure Large",
+        "purpose": "The month pace value."
+      },
+      "figure": {
+        "displayName": "Figure",
+        "purpose": "KPI values; split-flap on change."
+      },
+      "figure-inline": {
+        "displayName": "Figure Inline",
+        "purpose": "Board times, amounts, facts, axes, timestamps."
+      }
+    },
+    "shadows": [
+      {
+        "name": "float-dark",
+        "value": "0 24px 48px -24px rgba(0,0,0,.7)",
+        "purpose": "Tooltip, deal sheet and toast in the dark theme. Never on in-grid panels."
+      },
+      {
+        "name": "float-light",
+        "value": "0 24px 48px -28px rgba(14,19,25,.35)",
+        "purpose": "The same floating layers in the light theme."
+      },
+      {
+        "name": "late-halo",
+        "value": "0 0 0 3px var(--red-soft)",
+        "purpose": "Ring around a late status lamp."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(.16,1,.3,1)",
+        "purpose": "Fills and bar widths (0.7s), pace meter (1s), sheet (0.45s), toast (0.4s), chart line draw (1.1s)."
+      },
+      {
+        "name": "hover",
+        "value": "0.15s",
+        "purpose": "Color, background and border changes on controls and rows."
+      },
+      {
+        "name": "theme",
+        "value": "0.3s",
+        "purpose": "Background and color cross-fade when switching themes."
+      },
+      {
+        "name": "lamp-blink",
+        "value": "1.4s steps(2,jump-none) infinite",
+        "purpose": "Hard on/off blink of the current-slot amber lamp."
+      },
+      {
+        "name": "split-flap",
+        "value": "420ms",
+        "purpose": "Digit scramble settling left to right when a KPI or pace figure changes; skipped under reduced motion and on first paint."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "board-compact",
+        "value": "1320px"
+      },
+      {
+        "name": "stack",
+        "value": "1180px"
+      },
+      {
+        "name": "tabbar",
+        "value": "900px"
+      },
+      {
+        "name": "phone",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Period Segment",
+      "kind": "button",
+      "refersTo": "button-segment-on",
+      "description": "Radio-style period switch; the active option carries the amber signal.",
+      "html": "<div class=\"ds-seg\" role=\"radiogroup\" aria-label=\"Okres\"><button class=\"ds-seg-btn\" role=\"radio\">7 dni</button><button class=\"ds-seg-btn is-on\" role=\"radio\" aria-checked=\"true\">30 dni</button><button class=\"ds-seg-btn\" role=\"radio\">90 dni</button></div>",
+      "css": ".ds-seg{display:inline-flex;padding:3px;background:var(--panel);border:1px solid var(--line);border-radius:8px}.ds-seg-btn{min-height:34px;padding:0 14px;border:0;border-radius:5px;background:transparent;color:var(--text-2);font:600 13.5px \"Atkinson Hyperlegible Next\",system-ui,sans-serif;cursor:pointer;transition:background-color .15s,color .15s}.ds-seg-btn:hover{color:var(--text)}.ds-seg-btn.is-on{background:var(--amber);color:var(--on-amber)}.ds-seg-btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Quiet utility action (show more, clear filters); amber border on hover.",
+      "html": "<button class=\"ds-btn\">Pokaż więcej</button>",
+      "css": ".ds-btn{min-height:38px;padding:0 14px;border:1px solid var(--line-2);border-radius:6px;background:var(--panel-2);color:var(--text);font:600 15px \"Atkinson Hyperlegible Next\",system-ui,sans-serif;cursor:pointer;transition:border-color .15s}.ds-btn:hover{border-color:var(--amber)}.ds-btn:focus-visible{outline:2px solid var(--amber);outline-offset:2px}"
+    },
+    {
+      "name": "Icon Button",
+      "kind": "button",
+      "refersTo": "button-icon",
+      "description": "42px square tool button (theme toggle, close sheet).",
+      "html": "<button class=\"ds-iconbtn\" aria-label=\"Zamknij\"><svg viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M6 6l12 12M18 6 6 18\"/></svg></button>",
+      "css": ".ds-iconbtn{width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--text-2);cursor:pointer;transition:color .15s,border-color .15s}.ds-iconbtn:hover{color:var(--text);border-color:var(--line-2)}.ds-iconbtn:focus-visible{outline:2px solid var(--amber);outline-offset:2px}"
+    },
+    {
+      "name": "Search Field",
+      "kind": "input",
+      "refersTo": "input-search",
+      "description": "Top-bar search with inset stroked glyph; border turns amber on focus.",
+      "html": "<label class=\"ds-search\"><svg viewBox=\"0 0 24 24\" width=\"17\" height=\"17\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"><circle cx=\"11\" cy=\"11\" r=\"6.5\"/><path d=\"m16 16 4.5 4.5\"/></svg><input type=\"search\" placeholder=\"Szukaj firmy…\"></label>",
+      "css": ".ds-search{position:relative;display:inline-flex;align-items:center}.ds-search svg{position:absolute;left:11px;color:var(--text-3);pointer-events:none}.ds-search input{width:220px;height:42px;padding:0 12px 0 36px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--text);font:400 15px \"Atkinson Hyperlegible Next\",system-ui,sans-serif;outline:none;transition:border-color .15s}.ds-search input::placeholder{color:var(--text-3)}.ds-search input:focus{border-color:var(--amber)}"
+    },
+    {
+      "name": "Stage Filter Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Deal-stage filter; the selected chip inverts to a primary-text fill (amber stays reserved for the period).",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip is-on\">Wszystkie</button><button class=\"ds-chip\">Negocjacje</button><button class=\"ds-chip\">Wygrane</button></div>",
+      "css": ".ds-chips{display:flex;gap:6px;flex-wrap:wrap}.ds-chip{min-height:34px;padding:0 12px;border:1px solid var(--line);border-radius:6px;background:transparent;color:var(--text-2);font:600 13px \"Atkinson Hyperlegible Next\",system-ui,sans-serif;cursor:pointer;transition:color .15s,border-color .15s,background-color .15s}.ds-chip:hover{color:var(--text);border-color:var(--line-2)}.ds-chip.is-on{background:var(--text);color:var(--panel);border-color:var(--text)}.ds-chip:focus-visible{outline:2px solid var(--amber);outline-offset:2px}"
+    },
+    {
+      "name": "Rail Navigation",
+      "kind": "nav",
+      "refersTo": "nav-item-on",
+      "description": "Sticky left rail; active item on amber wash with an amber icon.",
+      "html": "<nav class=\"ds-rail\"><a href=\"#\" class=\"is-on\"><svg viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 4h7v7H4zM13 4h7v4h-7zM13 10h7v10h-7zM4 13h7v7H4z\"/></svg>Pulpit</a><a href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M3 5h18l-7 8v6l-4 2v-8L3 5Z\"/></svg>Lejek</a><a href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M4 20V10M10 20V4M16 20v-7M22 20H2\"/></svg>Źródła</a></nav>",
+      "css": ".ds-rail{display:grid;gap:2px;width:196px;padding:8px;background:var(--panel);font-family:\"Atkinson Hyperlegible Next\",system-ui,sans-serif}.ds-rail a{display:flex;align-items:center;gap:12px;min-height:42px;padding:0 12px;border-radius:6px;text-decoration:none;color:var(--text-2);font-weight:500;transition:background-color .15s,color .15s}.ds-rail a:hover{background:var(--panel-2);color:var(--text)}.ds-rail a.is-on{background:var(--amber-soft);color:var(--text)}.ds-rail a.is-on svg{color:var(--amber)}.ds-rail a:focus-visible{outline:2px solid var(--amber);outline-offset:2px}"
+    },
+    {
+      "name": "Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Flat 1px-ruled panel with title and tag in its head; no shadow.",
+      "html": "<section class=\"ds-panel\"><div class=\"ds-panel-head\"><h2>Lejek sprzedaży</h2><span class=\"ds-tag\">30 dni</span></div><p>Zawartość panelu.</p></section>",
+      "css": ".ds-panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:20px;color:var(--text);font:400 15px/1.5 \"Atkinson Hyperlegible Next\",system-ui,sans-serif}.ds-panel-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:16px}.ds-panel h2{margin:0;font-size:16px;font-weight:700;letter-spacing:-.015em}.ds-panel p{margin:0}.ds-tag{font-size:12.5px;color:var(--text-2);background:var(--panel-2);border:1px solid var(--line);padding:3px 8px;border-radius:4px}"
+    },
+    {
+      "name": "Departure Board Row",
+      "kind": "custom",
+      "description": "Signature timetable row: mono amber time, company and action, status lamp, done tick. Late, now and done variants.",
+      "html": "<div class=\"ds-board\"><div class=\"ds-row is-late\"><span class=\"ds-t\">09:30</span><span class=\"ds-what\"><b>Kowalski Sp. z o.o.</b><span>Telefon: oferta Q4</span></span><span class=\"ds-st\"><i class=\"ds-lamp\"></i>Spóźnione</span><button class=\"ds-tick\" aria-pressed=\"false\" aria-label=\"Oznacz jako zrobione\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12.5l4.5 4.5L19 7\"/></svg></button></div><div class=\"ds-row is-now\"><span class=\"ds-t\">11:00</span><span class=\"ds-what\"><b>Baltic Trans</b><span>Spotkanie: demo</span></span><span class=\"ds-st\"><i class=\"ds-lamp\"></i>Teraz</span><button class=\"ds-tick\" aria-pressed=\"false\" aria-label=\"Oznacz jako zrobione\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12.5l4.5 4.5L19 7\"/></svg></button></div><div class=\"ds-row is-ok\"><span class=\"ds-t\">08:15</span><span class=\"ds-what\"><b>Mazur Serwis</b><span>E-mail: umowa</span></span><span class=\"ds-st\"><i class=\"ds-lamp\"></i>Na czas</span><button class=\"ds-tick\" aria-pressed=\"true\" aria-label=\"Oznacz jako zrobione\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.4\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M5 12.5l4.5 4.5L19 7\"/></svg></button></div></div>",
+      "css": ".ds-board{background:var(--panel);border:1px solid var(--line);border-radius:8px;overflow:hidden;font:400 15px/1.35 \"Atkinson Hyperlegible Next\",system-ui,sans-serif;color:var(--text)}.ds-row{display:grid;grid-template-columns:62px minmax(0,1fr) 130px 44px;gap:14px;align-items:center;min-height:60px;padding:8px 12px 8px 20px;border-bottom:1px solid var(--line);transition:background-color .2s}.ds-row:last-child{border-bottom:0}.ds-row:hover{background:var(--panel-2)}.ds-t{font:600 15px \"Atkinson Hyperlegible Mono\",ui-monospace,monospace;font-variant-numeric:tabular-nums;color:var(--amber-ink)}.ds-what{display:flex;flex-direction:column;min-width:0}.ds-what b{font-weight:600}.ds-what span{color:var(--text-2);font-size:14px}.ds-st{display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600}.ds-lamp{width:9px;height:9px;border-radius:50%;background:var(--text-3);flex:none}.is-ok .ds-lamp{background:var(--green)}.is-ok .ds-st{color:var(--green)}.is-late .ds-lamp{background:var(--red);box-shadow:0 0 0 3px var(--red-soft)}.is-late .ds-st,.is-late .ds-t{color:var(--red)}.is-now{background:var(--amber-soft)}.is-now .ds-st{color:var(--amber-ink)}.is-now .ds-lamp{background:var(--amber);animation:ds-blink 1.4s steps(2,jump-none) infinite}@keyframes ds-blink{50%{opacity:.25}}.ds-tick{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--line-2);border-radius:6px;background:transparent;color:var(--text-3);cursor:pointer;transition:border-color .15s,color .15s,background-color .15s}.ds-tick:hover{border-color:var(--green);color:var(--green)}.ds-tick[aria-pressed=\"true\"]{background:var(--green);border-color:var(--green);color:var(--panel)}.ds-tick:focus-visible{outline:2px solid var(--amber);outline-offset:2px}"
+    },
+    {
+      "name": "Stage Pill",
+      "kind": "chip",
+      "refersTo": "stage-pill",
+      "description": "Deal stage with a leading dot: open, negotiation (amber), won (green), lost (red).",
+      "html": "<span class=\"ds-stage\">Kwalifikacja</span> <span class=\"ds-stage ds-stage--2\">Negocjacje</span> <span class=\"ds-stage ds-stage--3\">Wygrana</span> <span class=\"ds-stage ds-stage--4\">Przegrana</span>",
+      "css": ".ds-stage{display:inline-flex;align-items:center;gap:6px;padding:3px 9px;border-radius:4px;font:600 12.5px \"Atkinson Hyperlegible Next\",system-ui,sans-serif;background:var(--panel-2);color:var(--text)}.ds-stage::before{content:\"\";width:7px;height:7px;border-radius:50%;background:currentColor}.ds-stage--2{color:var(--amber-ink);background:var(--amber-soft)}.ds-stage--3{color:var(--green);background:var(--green-soft)}.ds-stage--4{color:var(--red);background:var(--red-soft)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Departure Board",
+    "overview": "NURT is a sales dashboard dressed as an operations room. The ground is graphite, the panels are ruled with single hairlines, and the only warm thing on screen is the amber of the board signal: the active period, the current time, the next action, this period's revenue line. Everything else is either neutral steel or a status lamp. Green and red are not decoration; they are lamps that report on a row, a delta, a quota.\n\nDensity is operational, not editorial. Rows are 50-60px, panels sit 18px apart on a 12-column grid, and the first viewport is a timetable of today's actions beside a single pace meter for the month. Numbers and times are set in a monospaced tabular face so columns of figures line up like a flight board, and when figures change they briefly scramble through digits before settling, like split-flap characters.\n\nThe light theme is a twin, not an inversion: cool paper ground, white panels, the same rules and lamps with darkened inks so they keep contrast on white. Both themes are first-class.",
+    "keyCharacteristics": [
+      "Graphite (or cool paper) ground, flat 1px-ruled panels, no glass, no gradients on surfaces.",
+      "One warm signal (amber) reserved for \"now\" and \"this period\"; green/red only as status.",
+      "Atkinson Hyperlegible Next for all words, Atkinson Hyperlegible Mono for every number and time.",
+      "Small, square-ish corners: 6px controls, 8px panels, 2px data bars.",
+      "Shadows only on things that float above the board."
+    ],
+    "rules": [
+      {
+        "name": "The One Signal Rule",
+        "body": "Amber means \"now\" or \"this period\". If an element is not current, active, or the thing being measured right now, it is not amber.",
+        "section": "colors"
+      },
+      {
+        "name": "The Lamp Rule",
+        "body": "Green and red are status reports, not brand colors. They appear only where a value is judged (on time / late, up / down, above / below pace, won / lost), and the wash variants only as the ground behind that same status.",
+        "section": "colors"
+      },
+      {
+        "name": "The Twin Ink Rule",
+        "body": "Every signal and lamp has a light-theme ink of its own; text never reuses the fill value across themes.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tabular Rule",
+        "body": "Every number, money amount, percentage, date and time is set in Atkinson Hyperlegible Mono with tabular figures. Words are never set in mono.",
+        "section": "typography"
+      },
+      {
+        "name": "The Split-Flap Rule",
+        "body": "When a headline figure changes, its digits scramble for about 420ms and settle left to right, with the value tinted amber ink while flapping. Skipped under reduced motion and on first paint.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Board Rule",
+        "body": "Nothing that lives in the grid casts a shadow. If it has a shadow, it is floating and dismissable.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** set every figure, amount, date and time in Atkinson Hyperlegible Mono with tabular numerals.",
+      "**Do** keep amber for the current period, current time, next action and the measured value; use amber ink (not fill amber) for amber text.",
+      "**Do** report status with a lamp dot plus a colored label, green for on-track and red for late or behind.",
+      "**Do** separate panels and rows with 1px rules and tonal steps; reserve the float shadow for tooltip, sheet and toast.",
+      "**Do** give every color a light-theme twin with its own ink and check both themes.",
+      "**Do** use cubic-bezier(.16,1,.3,1) for entrances and fills, 0.15s for hover color changes, and honor prefers-reduced-motion."
+    ],
+    "donts": [
+      "**Don't** build rows of equal KPI cards; KPIs live in one ruled strip.",
+      "**Don't** add glass, blur, or gradient surfaces; the only gradient is the chart area wash fading from amber.",
+      "**Don't** use green or red decoratively or as a brand accent.",
+      "**Don't** put shadows on panels sitting in the grid.",
+      "**Don't** round beyond 8px on in-grid elements; circles are reserved for lamps, avatars and timeline nodes."
+    ]
+  }
+}

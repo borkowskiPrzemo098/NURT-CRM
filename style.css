@@ -393,3 +393,5 @@ svg{fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-l
   .tbl td:nth-of-type(5){display:none}
 }
 .pace__facts{margin-top:auto!important;padding-top:16px}
+[data-theme="light"] :focus-visible{outline-color:var(--amber-ink)}
+[data-theme="light"] .search input:focus{border-color:var(--amber-ink)}
