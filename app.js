@@ -16,11 +16,15 @@
   var R = rng(20261011);
 
   var today = new Date(); today.setHours(0, 0, 0, 0);
+  while (today.getDay() === 0 || today.getDay() === 6) today.setDate(today.getDate() - 1); // demo zawsze w dniu roboczym
+  var clockStart = Date.now(), CLOCK0 = 10 * 60 + 5; // zegar demo startuje o 10:05
+  function nowMin() { return CLOCK0 + Math.floor((Date.now() - clockStart) / 1000) / 60; }
+  function hhmm(m) { m = Math.floor(m); return String(Math.floor(m / 60) % 24).padStart(2, '0') + ':' + String(m % 60).padStart(2, '0'); }
   var DAYS = ['niedziela', 'poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek', 'sobota'];
   var MONTHS = ['styczeń', 'luty', 'marzec', 'kwiecień', 'maj', 'czerwiec', 'lipiec', 'sierpień', 'wrzesień', 'październik', 'listopad', 'grudzień'];
   var MONTHS_G = ['sty', 'lut', 'mar', 'kwi', 'maj', 'cze', 'lip', 'sie', 'wrz', 'paź', 'lis', 'gru'];
   var dshort = function (d) { return d.getDate() + ' ' + MONTHS_G[d.getMonth()]; };
-  $('[data-today]').textContent = DAYS[today.getDay()] + ', ' + today.getDate() + ' ' + MONTHS_G[today.getMonth()] + ' ' + today.getFullYear() + ' · dane demonstracyjne';
+  $('[data-today]').innerHTML = DAYS[today.getDay()] + ', ' + today.getDate() + ' ' + MONTHS_G[today.getMonth()] + ' ' + today.getFullYear() + ' · zegar demo <b class="clock" data-clock>10:05</b> · dane demonstracyjne';
   $('[data-month]').textContent = MONTHS[today.getMonth()];
 
   /* dzienny przychód z 180 dni: trend + tydzień roboczy + szum */
@@ -47,14 +51,24 @@
     { t: '16:00', co: 'Termoplast Gniezno', act: 'Przegląd odnowienia', val: 96000, o: 1, s: 'ok', note: 'na czas' }
   ];
   var board = $('[data-board]');
+  function slotState(r) {
+    if (r.s === 'late') return r;
+    var p = r.t.split(':'), m = +p[0] * 60 + +p[1], n = nowMin();
+    if (m < n - 30) return { s: 'late', note: 'po czasie' };
+    if (m <= n + 15) return { s: 'now', note: 'teraz' };
+    return { s: 'ok', note: 'za ' + (m - n >= 60 ? Math.floor((m - n) / 60) + ' h ' : '') + Math.round((m - n) % 60) + ' min' };
+  }
   function renderBoard() {
+    var nextMarked = false;
     board.innerHTML = TODO.map(function (r, i) {
-      return '<div class="board__row is-' + (r.done ? 'done' : r.s) + '" role="row">' +
+      var st = slotState(r);
+      var isNext = !nextMarked && st.s === 'ok'; if (isNext) nextMarked = true;
+      return '<div class="board__row is-' + (r.done ? 'done' : st.s) + (isNext ? ' is-next' : '') + '" role="row"' + (isNext ? ' data-now="' + hhmm(nowMin()) + '"' : '') + '>' +
         '<span role="cell" class="board__t">' + r.t + '</span>' +
         '<span role="cell" class="board__what"><b class="board__co">' + r.co + '</b><span class="board__act">' + r.act + '</span></span>' +
         '<span role="cell" class="num board__val">' + pln(r.val) + '</span>' +
         '<span role="cell" class="board__own"><i class="who" title="' + OWNERS[r.o] + '">' + initials(OWNERS[r.o]) + '</i><span>' + OWNERS[r.o].split(' ')[0] + '</span></span>' +
-        '<span role="cell" class="board__st"><i class="lamp" aria-hidden="true"></i>' + (r.done ? 'wykonano' : r.note) + '</span>' +
+        '<span role="cell" class="board__st"><i class="lamp" aria-hidden="true"></i>' + (r.done ? 'wykonano' : st.note) + '<span class="board__stval"> · ' + pln(r.val) + '</span></span>' +
         '<span role="cell"><button type="button" class="tick" data-tick="' + i + '" aria-pressed="' + !!r.done + '" aria-label="' + (r.done ? 'Przywróć: ' : 'Oznacz jako wykonane: ') + r.act + ', ' + r.co + '"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></button></span>' +
         '</div>';
     }).join('');
@@ -71,6 +85,8 @@
     if (TODO[i].done) toast('Wykonano: ' + TODO[i].act + ' · ' + TODO[i].co);
   });
   renderBoard();
+  setInterval(function () { var c = $('[data-clock]'); if (c) c.textContent = hhmm(nowMin()); }, 1000);
+  setInterval(renderBoard, 15000);
 
   /* ---------- plan miesiąca ---------- */
   function workdays(from, to) { var n = 0, d = new Date(from); while (d <= to) { var w = d.getDay(); if (w && w < 6) n++; d.setDate(d.getDate() + 1); } return n; }
@@ -105,7 +121,7 @@
     var leads = s.reduce(function (a, p) { return a + p.leads; }, 0);
     var r2 = rng(n * 31 + offset * 7 + 3);
     var won = Math.round(leads * (0.044 + r2() * 0.012));
-    return { rev: rev, leads: leads, won: won, conv: won / leads, avg: rev / Math.max(won, 1), cycle: 24 + Math.round(r2() * 9), mrr: rev / n * 30 * 0.31 };
+    return { rev: rev, leads: leads, won: won, conv: won / leads, avg: rev / Math.max(won, 1), cycle: 24 + Math.round(r2() * 9), mrr: rev / n * 30 * (0.26 + r2() * 0.1) };
   }
   var KPI_DEF = [
     { k: 'rev', label: 'Przychód', fmt: kpln },
@@ -166,8 +182,8 @@
     var W = Math.max(chartBox.clientWidth, 280), H = Math.max(Math.min(W * 0.42, 320), 220);
     var P = { l: 52, r: 12, t: 14, b: 30 };
     var max = Math.max.apply(null, now.concat(prev).map(function (p) { return p.v; })) * 1.08;
-    var step = Math.pow(10, Math.floor(Math.log10(max / 4)));
-    var tick = Math.ceil(max / 4 / step) * step;
+    var raw = max / 4, mag = Math.pow(10, Math.floor(Math.log10(raw)));
+    var tick = [1, 2, 2.5, 5, 10].map(function (k) { return k * mag; }).filter(function (t) { return t >= raw; })[0];
     max = tick * 4;
     var x = function (i) { return P.l + (W - P.l - P.r) * (now.length === 1 ? 0.5 : i / (now.length - 1)); };
     var y = function (v) { return P.t + (H - P.t - P.b) * (1 - v / max); };
@@ -341,6 +357,7 @@
       renderDeals();
     });
   });
+  $('[data-sort-m]').addEventListener('change', function (e) { sortKey = e.target.value; sortDir = sortKey === 'company' ? 1 : -1; renderDeals(); });
   $('[data-more]').addEventListener('click', function () { shown += 10; renderDeals(); });
   $('[data-clear]').addEventListener('click', function () { query = ''; $('[data-search]').value = ''; stageFilter = -1; $$('.chip', chipBox).forEach(function (c, i) { c.classList.toggle('is-on', !i); c.setAttribute('aria-pressed', !i); }); renderDeals(); });
   var searchT;
@@ -417,6 +434,8 @@
   function toast(m) { toastEl.textContent = m; toastEl.classList.add('is-on'); clearTimeout(tt); tt = setTimeout(function () { toastEl.classList.remove('is-on'); }, 2800); }
 
   var rt; window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(renderChart, 120); });
+  chartBox.classList.add('is-first');
   setPeriod(30);
+  setTimeout(function () { chartBox.classList.remove('is-first'); }, 1300);
   renderDeals();
 })();

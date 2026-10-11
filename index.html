@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;600;700;800&family=Atkinson+Hyperlegible+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css?v=1">
+<link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
 <!--
@@ -67,7 +67,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <section class="panel board" aria-labelledby="board-h">
         <div class="panel__head">
           <h2 id="board-h">Dziś do zrobienia</h2>
-          <p class="board__count"><b data-todo-left>0</b> z <span data-todo-all>0</span> otwarte</p>
+          <p class="board__count">otwarte: <b data-todo-left>0</b> z <span data-todo-all>0</span></p>
         </div>
         <div class="board__table" role="table" aria-label="Zadania na dziś">
           <div class="board__row board__row--head" role="row">
@@ -124,6 +124,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
           <h2 id="deals-h">Szanse sprzedaży</h2>
           <div class="chips" role="group" aria-label="Filtr etapu" data-stage-filter></div>
         </div>
+        <label class="sort-m">Sortuj: <select data-sort-m><option value="value">wartość malejąco</option><option value="prob">szansa malejąco</option><option value="last">ostatni kontakt</option><option value="company">firma A–Z</option></select></label>
         <div class="table-wrap">
           <table class="tbl">
             <caption class="sr">Szanse sprzedaży, kliknij nagłówek, żeby posortować</caption>
@@ -174,6 +175,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   </aside>
 </div>
 <div class="toast" role="status" aria-live="polite" data-toast></div>
-<script src="app.js?v=1"></script>
+<script src="app.js?v=2"></script>
 </body>
 </html>
