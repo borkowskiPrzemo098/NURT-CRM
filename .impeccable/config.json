@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "border-left:2px solid var(--line-2)",
+        "createdAt": "2026-10-11T12:17:31.067Z",
+        "reason": "Claude: vertical line of the deal-history timeline, not a card accent"
+      }
+    ]
+  }
+}
